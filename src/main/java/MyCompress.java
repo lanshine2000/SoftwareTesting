@@ -25,8 +25,8 @@ public class MyCompress {
     public void Files2Zip(File[] sourceFiles, File zipFile, boolean isDeleteSourceFile) {
         InputStream inputStream = null;
         ZipArchiveOutputStream zipArchiveOutputStream = null;
-        if (sourceFiles == null || sourceFiles.length <= 0) {
-//        if (sourceFiles != null && sourceFiles.length > 0) {
+//        if (sourceFiles == null || sourceFiles.length <= 0) {
+        if (sourceFiles != null && sourceFiles.length > 0) {
             this.result = false;
             return ;
         }
