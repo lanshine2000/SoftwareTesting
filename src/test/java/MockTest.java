@@ -37,7 +37,7 @@ public class MockTest {
         /* 创建 Mock 对象 */
         ArchiveEntry archiveEntry = mock(ArchiveEntry.class);
 
-        /* 设置预期 */
+        /* 设置 预期 */
         doReturn("doc.zip").when(archiveEntry).getName();
 
         assertEquals("Exception", "doc.zip", archiveEntry.getName());
